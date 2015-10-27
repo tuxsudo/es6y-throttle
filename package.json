@@ -1,6 +1,6 @@
 {
   "name": "es6y-throttle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Throttle the execution of a function. Written as an es6 source module.",
   "main": "index.js",
   "jsnext:main": "index.js",
