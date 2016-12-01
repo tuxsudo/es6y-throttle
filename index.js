@@ -1,13 +1,21 @@
-export default function( fn, timing=200 ) {
+export const throttle = (fn, time = 50) => {
+    let timer = null;
 
-    var timer;
-
-    return function(...args) {
-
+    function throttledFn(...args) {
         if(!timer) {
-            timer = setTimeout( e => { fn.apply( this, args ); timer=false }, timing);
+            timer = setTimeout( () => {
+                fn(...args);
+                timer = null;
+            }, time )
         }
+    }
 
-    };
+    throttledFn.cancel = () => {
+        clearTimeout(timer);
+        timer = null;
+    }
 
+    return throttledFn;
 }
+
+export default throttle;

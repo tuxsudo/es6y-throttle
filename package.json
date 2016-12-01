@@ -1,6 +1,6 @@
 {
-  "name": "es6y-throttle",
-  "version": "1.0.1",
+  "name": "@tuxsudo/throttle",
+  "version": "1.0.0",
   "description": "Throttle the execution of a function. Written as an es6 source module.",
   "main": "index.js",
   "jsnext:main": "index.js",
@@ -19,15 +19,12 @@
   "author": "Jared Anderson @tuxsudo",
   "license": "MIT",
   "devDependencies": {
-    "babel": "^5.8.29",
-    "rollup": "^0.20.2",
+    "babel": "^6.5.2",
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-stage-2": "^6.18.0",
     "tap-spec": "^4.1.0",
     "tape": "^4.2.2",
     "uglifyjs": "^2.4.10"
-  },
-  "browserify": {
-    "transform": [
-      "babelify"
-    ]
   }
 }
